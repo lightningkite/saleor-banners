@@ -21,6 +21,7 @@ DEFAULT_BANNER_COLOR = getattr(settings, 'DEFAULT_BANNER_COLOR', '#ff473c')
 class SaleorBanner(models.Model):
     name = models.CharField(max_length=255)
     banner_text = models.CharField(max_length=255)
+    link = models.TextField(blank=True, default='')
     _text_color = models.CharField(max_length=7, default=DEFAULT_TEXT_COLOR)
     _banner_color = models.CharField(
         max_length=7, default=DEFAULT_BANNER_COLOR)
