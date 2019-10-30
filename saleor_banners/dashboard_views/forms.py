@@ -15,7 +15,7 @@ class SaleorBannerForm(forms.ModelForm):
     class Meta:
         model = SaleorBanner
         verbose_name_plural = 'banners'
-        fields = ['name', 'banner_text']
+        fields = ['name', 'banner_text', 'link']
 
     def __init__(self, *args, **kwargs):
         super(SaleorBannerForm, self).__init__(*args, **kwargs)
