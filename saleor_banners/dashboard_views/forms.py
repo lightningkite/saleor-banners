@@ -11,6 +11,7 @@ class SaleorBannerForm(forms.ModelForm):
 
     text_color = forms.CharField(widget=TextInput(attrs={'type': 'color'}))
     banner_color = forms.CharField(widget=TextInput(attrs={'type': 'color'}))
+    link = forms.URLField(required=False)
 
     class Meta:
         model = SaleorBanner
