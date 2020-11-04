@@ -69,7 +69,7 @@ Add the link to the dashboard by importing the template tag in `templates/dashbo
 
 <ul class="side-nav">
   <li class="nav-home">
-    <a href="{% url 'dashboard:index' %}">
+    <a href="{% url 'dashboard-index' %}">
       {% trans "Home" context "Dashboard homepage" %}
     </a>
   </li>
